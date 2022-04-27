@@ -8,6 +8,7 @@ public class QuestApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(QuestApplication.class, args);
+		
 		System.out.println("Hora de Aventura");
 
 		Missao m1 = new Missao();

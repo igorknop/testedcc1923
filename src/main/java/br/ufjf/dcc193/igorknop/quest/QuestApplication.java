@@ -15,6 +15,9 @@ public class QuestApplication {
 		m1.iniciar();
 		m1.concluir();
 
+		Missao m2 = ctx.getBean(Missao.class);
+		m2.iniciar();
+		m2.concluir();
 
 	}
 

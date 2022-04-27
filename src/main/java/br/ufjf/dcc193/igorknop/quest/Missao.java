@@ -1,11 +1,11 @@
 package br.ufjf.dcc193.igorknop.quest;
 
 public class Missao {
-    private Cavaleiro cavaleiro;
+    private Heroi heroi;
 
-    public Missao(Cavaleiro cavaleiro){
+    public Missao(Heroi heroi){
         System.out.println("O Rei criou uma nova missão!");
-        setCavaleiro(cavaleiro);
+        setHeroi(heroi);
     }
     public Missao(){
         this(null);
@@ -15,16 +15,16 @@ public class Missao {
         System.out.println("A missão teve início.");
     }
     public void concluir() {
-        this.cavaleiro.agir();
+        this.heroi.agir();
         System.out.println("A missão chegou ao fim!");
     }
 
-    public Cavaleiro getCavaleiro() {
-        return cavaleiro;
+    public Heroi getHeroi() {
+        return heroi;
     }
 
-    public void setCavaleiro(Cavaleiro cavaleiro) {
-        this.cavaleiro = cavaleiro;
+    public void setHeroi(Heroi heroi) {
+        this.heroi = heroi;
     }
     
 }
